@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: var(--Pale-blue);
+  padding: 1.25rem;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.order {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.description {
+  margin-top: 1rem;
+  color: grey;
+  max-width: 450spx;
+  text-align: center;
+}
+
+.icon-music {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li:last-child {
+  color: gray;
+}
+
+.change {
+  color: blue;
+  text-decoration: underline;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.change:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.Payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Proceed {
+  background-color: var(--Bright-blue);
+  padding: 1rem 8rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.Proceed:hover {
+  cursor: pointer;
+}
+
+.Cancel {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1.25rem;
+}
+
+.Cancel:hover {
+  cursor: pointer;
+}
